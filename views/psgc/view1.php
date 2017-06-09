@@ -1,0 +1,29 @@
+<?php
+$this->widget('CTabView', array(
+    'tabs'=>array(
+        'tab1'=>array(
+            'title'=>'Region',
+            'content'=>'Content was placed directly..',
+        ),
+        'tab2'=>array(
+            'title'=>'Province',
+            'view'=>'_form',
+            //'data'=>array('model'=>$model),
+        ),
+        'tab3'=>array(
+            'title'=>'City/Municipality',
+            'url'=>'http://www.bsourcecode.com/',
+        ),
+		 'tab4'=>array(
+            'title'=>'Barangay',
+            'url'=>'http://www.bsourcecode.com/',
+        ),
+    ),
+    'activeTab'=>'tab2',
+    'cssFile'=>Yii::app()->baseUrl.'/css/jquery.yiitab.css',
+    'htmlOptions'=>array(
+            'style'=>'',
+            ),
+    'id'=>'Tab-Id'   
+));
+?>
